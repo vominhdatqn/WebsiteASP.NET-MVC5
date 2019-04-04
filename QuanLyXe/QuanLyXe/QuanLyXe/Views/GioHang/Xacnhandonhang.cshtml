@@ -1,0 +1,10 @@
+﻿<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.11.1.min.js"></script>
+<link href="~/Content/css/GioHang.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Xacnhandonhang";
+    Layout = "~/Views/Shared/NguoiDungLayout.cshtml";
+}
+
+<h2>Đơn hàng của quý khách đã được chúng tôi ghi nhận.Chúng tôi sẽ liên hệ quý khách trong thời gian sớm nhất và giao hàng đúng hẹn</h2>
+<a href="@Url.Action("Index" , "QuanLyLinhKien")" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>

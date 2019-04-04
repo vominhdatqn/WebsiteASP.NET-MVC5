@@ -1,0 +1,72 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<QuanLyXe.Models.SanPham>
+<link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/css/layout.min.css" rel="stylesheet" />
+<link href="~/Content/TrangChu.css" rel="stylesheet" />
+<link href="~/Content/css/layout.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "TimTheoGia";
+    Layout = "~/Views/Shared/NguoiDungLayout.cshtml";
+}
+
+<h2 style="text-align:center;padding-top: 28px;
+    margin-bottom: -9px;">
+    @ViewBag.ThongBao
+</h2>
+
+<div class="bg-color-sky-light" data-auto-height="true">
+    @{ int i = 0;}
+    @foreach (var item in Model)
+    {
+        i++;
+        <div class="col-sm-4" id="SanPham">
+            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
+                <div class="service" id="product" data-height="height">
+                    <div>
+                        <a href="@Url.Action("XemChiTietSanPham","SanPham",new { @MaSP=item.MaSP})"> <img class="full-width img-responsive" src="@Url.Content("~/HinhAnhSP/"+item.HinhAnh)" alt="Portfolio Image" width='50' height='50' /></a>
+                    </div>
+                    <div>
+                        <span id="gia">Giá:</span><h3>@String.Format("{0:0,0}", item.GiaBan)<b> - $</b></h3>
+
+                        <p class="margin-b-5">@item.TenSP</p>
+                    </div>
+                    @using (Html.BeginForm("ThemGioHang", "GioHang", new { @iMaSP = item.MaSP, @strURL = Request.Url.ToString() }))
+                    {
+
+                        <input type="submit" value="Mua Hàng" class="btn-theme btn-theme-sm btn-default-bg text-uppercase" />
+                    }
+                </div>
+            </div>
+        </div>
+
+        if (i % 3 == 0)
+        {
+            <div style="clear:both"></div>
+        }
+    }
+
+</div>
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+
+    #product {
+        background: #fff;
+        padding: 50px;
+        border: 1px solid #c2c5ce;
+        border-radius: 0 !important;
+        transition: box-shadow 0.5s;
+    }
+
+        #product:hover {
+            background-color: white;
+            box-shadow: 10px 0px 10px #17bed2 !important;
+        }
+</style>
+

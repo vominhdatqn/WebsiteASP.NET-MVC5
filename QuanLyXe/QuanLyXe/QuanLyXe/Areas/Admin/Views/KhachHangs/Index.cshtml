@@ -1,0 +1,91 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.IPagedList<QuanLyXe.Models.KhachHang>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Quản Lý Người Dùng</h2>
+
+<p>
+    <a href="@Url.Action("Create","KhachHangs")" class="btn btn-success btn-sm"><i class="fas fa-plus-square"></i>Thêm Mới</a>
+</p>
+<table class="table">
+    <tr style="display:table-row;vertical-align: inherit;border-color: inherit;">
+        <th style="width:5%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().TenKH)
+        </th>
+        <th style="width:5%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().NgaySinh)
+        </th>
+        <th style="width:5%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().DienThoai)
+        </th>
+        <th style="width:25%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().DiaChi)
+        </th>
+        <th style="width:3%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().GioiTinh)
+        </th>
+        <th style="width:7%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().Email)
+        </th>
+        <th style="width:5%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().TaiKhoan)
+        </th>
+        <th style="width:5%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().MatKhau)
+        </th>
+        <th style="width:5%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().isAdmin)
+        </th>
+        <th style="width:5%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().Allowed)
+        </th>
+        <th style="width:30%;text-align:center"></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr style="display:table-row;vertical-align: inherit;border-color: inherit;">
+        <td style="width:9%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.TenKH)
+        </td>
+        <td style="width:5%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.NgaySinh)
+        </td>
+        <td style="width:5%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.DienThoai)
+        </td>
+        <td style="width:25%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.DiaChi)
+        </td>
+        <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.GioiTinh)
+        </td>
+        <td style="width:7%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td style="width:5%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.TaiKhoan)
+        </td>
+        <td style="width:5%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.MatKhau)
+        </td>
+        <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.isAdmin)
+        </td>
+        <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.Allowed)
+        </td>
+        <td style="width:30%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">      
+            <a href="@Url.Action("Edit","KhachHangs", new {id=item.MaKH})" class="btn btn-warning btn-sm" style="width:93px"><i class="fas fa-edit"></i>Chỉnh Sửa</a>
+            <a href="@Url.Action("Details","KhachHangs",new {id=item.MaKH})" class="btn btn-info btn-sm" style="width:93px;text-align:left"><i class="fas fa-info-circle"></i>Hiển Thị</a>
+            <a href="@Url.Action("Delete","KhachHangs",new {id=item.MaKH})" class="btn btn-danger btn-sm" style="width:93px;text-align:left"><i class="fas fa-trash-alt"></i>Xóa</a>
+            <a href="@Url.Action("Index","CapPheps",new {id=item.MaKH},null)" class="btn btn-secondary btn-sm" style="width:93px;text-align:left"><i class="fas fa-universal-access"></i>Cấp Quyền</a>
+        </td>
+    </tr>
+    }
+
+</table>

@@ -1,0 +1,91 @@
+﻿@using QuanLyXe.Models;
+@model List<NhaCungCap>
+<link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/css/layout.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/css/layout.css" rel="stylesheet" />
+<link href="~/Content/vendor/swiper/css/swiper.min.css" rel="stylesheet" />
+<link href="~/Content/vendor/swiper/css/swiper.css" rel="stylesheet" />
+
+@foreach (var item in Model)
+{
+  
+
+        <li><a href="@Url.Action("SanPhamNCC",new {@MaNCC=item.MaNCC })">@item.TenNCC</a></li>
+      
+
+
+}
+        @*<li><a href="@Url.Action("DanhNhaCC")">Các Hãng Khác</a></li>*@
+  
+
+
+@*<style>
+    .swiper-slide {
+        text-align: center;
+    }
+
+        .swiper-slide li {
+            color: #f1f1f1;
+            float: left !important;
+            padding: 2px 5px;
+            list-style-type: none;
+        }
+
+        .swiper-slide ul {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            background: #17bed2;
+            zoom: 1;
+        }
+
+
+
+    #TenNCC a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 14px;
+    }
+
+        #TenNCC a:hover {
+            background: #F1F1F1;
+            color: #333;
+        }
+
+    #TenNCC ul li {
+        border-right: 1px dotted #999;
+        position: relative;
+    }
+</style>*@
+@*
+    <div class="bg-color-sky-light">
+        <div class="content-lg container">
+            <!-- Swiper Clients -->
+            <div class="swiper-slider swiper-clients">
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper-clients-img" src="~/img/clients/01.png" alt="Clients Logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-clients-img" src="~/img/clients/02.png" alt="Clients Logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-clients-img" src="~/img/clients/03.png" alt="Clients Logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-clients-img" src="~/img/clients/04.png" alt="Clients Logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-clients-img" src="~/img/clients/05.png" alt="Clients Logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-clients-img" src="~/img/clients/06.png" alt="Clients Logo">
+                    </div>
+                </div>
+                <!-- End Swiper Wrapper -->
+            </div>
+            <!-- End Swiper Clients -->
+        </div>
+    </div> *@

@@ -1,0 +1,143 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Able Pro Responsive Bootstrap 4 Admin Template by Phoenixcoded</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Phoenixcoded">
+    <meta name="keywords" content=", Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="Phoenixcoded">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!--Date Picker Material Icon Css-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- iconfont -->
+    <link href="~/Areas/Admin/cssadmin/icofont.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/inverse.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/main.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/responsive.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/simple-line-icons.css" rel="stylesheet" />
+    <script src="~/Content/font-awesome-4.7.0/fontawesome-all.min.js"></script>
+</head>
+<body class="horizontal-fixed fixed">
+
+    <div class="content-wrapper">
+        <!-- Container-fluid starts -->
+        <div class="container-fluid">
+            <!-- Main content starts -->
+            <div class="row">
+                <div class="col-sm-12">
+                   
+                        <a href="@Url.Action("Index","Home")" style="text-align:left"><i class="fas fa-home"></i><h2>Trang Chủ</h2></a>        
+                    </div>
+                
+            </div>
+            <!-- Tooltip start -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header"><h2  style="text-align:center">SỬA THÔNG TIN KHÁCH HÀNG</h2></div>
+                        <div class="card-block button-list">
+                            @*<div class="md-group-add-on">
+                                <span class="md-add-on">
+                                    <i class="icofont icofont-ui-user"></i>
+                                </span>
+                                <div class="md-input-wrapper">
+                                    <input type="text" id="name" class="md-form-control" title="yourname" />
+                                    <label>Enter Your Name</label>
+                                </div>
+
+                            </div>
+
+                            <div class="md-group-add-on">
+                                <span class="md-add-on">
+                                    <i class="icofont icofont-ui-email"></i>
+                                </span>
+                                <div class="md-input-wrapper">
+                                    <input type="email" id="email" class="md-form-control"
+                                           title="your email name must be 8-16 character long" />
+                                    <label>Enter Email</label>
+                                </div>
+                            </div>
+                            <div class="md-group-add-on">
+                                <span class="md-add-on">
+                                    <i class="icofont icofont-ui-keyboard"></i>
+                                </span>
+                                <div class="md-input-wrapper">
+                                    <input type="password" id="password" class="md-form-control" title="Enter The minimum 7 characters password length" />
+                                    <label>Password</label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary waves-effect waves-light m-r-20 m-t-15 m-b-20"
+                                    data-toggle="tooltip" data-placement="right" title="submit">
+                                Submit
+                            </button>*@
+                            @RenderBody()
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                </div>
+            </div>
+           
+       
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="../bower_components/jquery/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../bower_components/popper.js/js/popper.min.js"></script>
+
+        <!-- Required Fremwork -->
+        <script type="text/javascript" src="../bower_components/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- waves effects.js -->
+        <script src="~/Content/hienthilayout/waves.min.js"></script>
+        <!-- Scrollbar JS-->
+        <script type="text/javascript" src="../bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+
+        <script src="~/Content/hienthilayout/jquery.nicescroll.min.js"></script>
+
+        <!--classic JS-->
+        <script type="text/javascript" src="../bower_components/classie/js/classie.js"></script>
+
+        <!-- notification -->
+        <script src="~/Content/hienthilayout/bootstrap-growl.min.js"></script>
+
+        <!-- pie chart.js -->
+        <script type="text/javascript" src="../bower_components/bower-jquery-easyPieChart/js/jquery.easypiechart.min.js"></script>
+        <script src="~/Content/hienthilayout/counter.js"></script>
+        <!-- Date picker.js -->
+        <script type="text/javascript" src="../bower_components/moment/js/moment.js"></script>
+
+        <script src="~/Content/hienthilayout/bootstrap-material-datetimepicker.js"></script>
+
+        <!-- custom js -->
+
+        <script src="~/Content/hienthilayout/main.min.js"></script>
+        <script src="~/Content/hienthilayout/profile.js"></script>
+
+        <script src="~/Content/hienthilayout/elements.js"></script>
+
+        <script src="~/Content/hienthilayout/menu-horizontal.min.js"></script>
+
+
+</body>
+</html>
+

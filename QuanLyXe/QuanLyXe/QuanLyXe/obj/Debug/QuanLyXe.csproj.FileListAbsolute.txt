@@ -1,0 +1,428 @@
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\ApplicationInsights.config
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\csc.exe
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\System.Collections.Immutable.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\vbc.exe
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe.config
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll.config
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\QuanLyXe.pdb
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\EntityFramework.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Web.Infrastructure.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Owin.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.Helpers.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.Razor.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Deployment.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Razor.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\WebGrease.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.Helpers.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.Razor.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Deployment.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Razor.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.pdb
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\EntityFramework.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.csprojResolveAssemblyReference.cache
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.dll
+c:\users\dell\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.pdb
+C:\Users\DELL\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\PagedList.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\PagedList.xml
+C:\Users\DELL\documents\visual studio 2015\Projects\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\ApplicationInsights.config
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\csc.exe
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\System.Collections.Immutable.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\vbc.exe
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe
+D:\CNPM\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe.config
+D:\CNPM\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll.config
+D:\CNPM\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\QuanLyXe.pdb
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\EntityFramework.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Agent.Intercept.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Web.Infrastructure.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Owin.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\PagedList.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.Helpers.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.Razor.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Deployment.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Razor.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\WebGrease.dll
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\PagedList.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.Helpers.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.Razor.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Deployment.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Razor.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.pdb
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\EntityFramework.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.xml
+D:\CNPM\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\CNPM\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.csprojResolveAssemblyReference.cache
+D:\CNPM\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.dll
+D:\CNPM\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\ApplicationInsights.config
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\csc.exe
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\vbc.exe
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll.config
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\QuanLyXe.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\EntityFramework.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Owin.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\PagedList.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\WebGrease.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\PagedList.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\EntityFramework.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLySP\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.pdb
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\ApplicationInsights.config
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll.config
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\QuanLyXe.pdb
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Owin.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\PagedList.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\WebGrease.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\PagedList.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.dll
+C:\Users\DELL\Desktop\laptp\xe2\QuanLySP\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\ApplicationInsights.config
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\csc.exe
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\vbc.exe
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll.config
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\QuanLyXe.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\QuanLyXe.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\EntityFramework.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Owin.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\PagedList.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.Helpers.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.Razor.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\WebGrease.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\EntityFramework.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.Web.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\PagedList.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\PagedList.Mvc.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.Mvc.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.Helpers.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.Optimization.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.Razor.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\obj\Debug\QuanLyXe.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\ClosedXML.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\DocumentFormat.OpenXml.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\ExcelNumberFormat.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\FastMember.Signed.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\ClosedXML.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\ClosedXML.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\DocumentFormat.OpenXml.xml
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QuanLyXe\QuanLyXe\QuanLyXe\bin\ExcelNumberFormat.xml

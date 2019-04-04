@@ -1,0 +1,44 @@
+﻿@model IEnumerable<QuanLyXe.Models.BlogPermission>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center;color:#429841;">Quản Lý Cho Phép</h2>
+
+<p>
+    <a href="@Url.Action("Create","BlogPermissions")" class="btn btn-success btn-sm"><i class="fas fa-plus-square"></i>Thêm Mới</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PermisstionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PermisstionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.PermissionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PermissionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PermissionId })*@
+            <a href="@Url.Action("Edit","BlogPermissions", new {id=item.PermissionId})" class="btn btn-warning btn-sm" style="width:93px"><i class="fas fa-edit"></i>Chỉnh Sửa</a>
+            <a href="@Url.Action("Details","BlogPermissions",new {id=item.PermissionId})" class="btn btn-info btn-sm" style="width:93px;text-align:left"><i class="fas fa-info-circle"></i>Hiển Thị</a>
+            @*<a href="@Url.Action("Delete","BlogPermissions",new {id=item.PermissionId})" class="btn btn-danger btn-sm" style="width:93px;text-align:left"><i class="fas fa-trash-alt"></i>Xóa</a>*@
+        </td>
+    </tr>
+}
+
+</table>

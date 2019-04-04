@@ -1,0 +1,48 @@
+﻿.QuangCao{
+    display:none;
+}
+#HinhAnh{
+    float:left;
+    border:solid 1px #1ECBF4;
+}
+#ThongTin{
+    float:left;
+    width:600px;
+        margin-left: 20px;
+    padding: 30px;
+}
+#TenSanPham{
+    font-weight:normal;
+    font-size:20pt;
+    height:auto;
+    word-wrap:break-word;
+    color:red;
+}
+#MaLoai,#NhaCC{
+    font-size:15pt;
+    font-weight:normal;
+    height:auto;
+    color:red;
+    margin-right: 80px;
+}
+#MoTa{
+    
+    font-weight:normal;
+    height:auto;
+     word-wrap:break-word;
+    color:red;
+}
+#GiaBan{
+    font-size:25pt;
+    font-weight:normal;
+    height:auto;
+   
+    color:orange;
+}
+#btnGioHang{
+    font-family:'FontAwesome','Segoe UI';
+        left: 40%;
+}
+#btnGioHang a:hover{
+    background:#d21022;
+}

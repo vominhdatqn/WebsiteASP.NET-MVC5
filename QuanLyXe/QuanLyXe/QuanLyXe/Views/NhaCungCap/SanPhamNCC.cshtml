@@ -1,0 +1,98 @@
+﻿@*@using QuanLyXe.Models;
+@model List<SanPham>*@
+@using PagedList.Mvc;
+@model PagedList.IPagedList<QuanLyXe.Models.SanPham>
+
+@{
+    ViewBag.Title = "SanPhamNCC";
+    Layout = "~/Views/Shared/NguoiDungLayout.cshtml";
+}
+
+@{ int i = 0;}
+@foreach (var item in Model)
+{
+    i++;
+    <div class="col-sm-4" id="SanPham">
+        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
+            <div class="service" id="product" data-height="height">
+                <div>
+                    <a href="@Url.Action("XemChiTietSanPham","SanPham", new {@MaSP=item.MaSP })">
+                        <img class="full-width img-responsive" src="@Url.Content("~/HinhAnhSanPham/"+item.HinhAnh)" style="height:150px;width:150px" alt="Portfolio Image" width='50' height='50' />
+                    </a>
+                </div>
+                <div>
+                    <span id="gia">Giá:</span><h3>@String.Format("{0:0,0}", item.GiaBan)<b> - $</b></h3>
+
+                    <p class="margin-b-5">@item.TenSP</p>
+                </div>
+                @*@using (Html.BeginForm("ThemGioHang", "GioHang", new { @iMaSP = item.MaSP, @strURL = Request.Url.ToString() }))
+                {
+
+                    <input type="submit" value="Mua Hàng" class="btn-theme btn-theme-sm btn-default-bg text-uppercase" />
+                }*@
+                <div class="nn-product-box-actions">
+                    <button type="button" title="Add to Cart" class="btn-theme btn-theme-sm btn-default-bg text-uppercase" data-id="@item.MaSP">
+                        Mua Hàng
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    if (i % 3 == 0)
+    {
+        <div style="clear:both"></div>
+
+    }
+
+
+
+}
+<div style="clear:both"></div>
+<div class="MenuTrang">
+        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+        @Html.PagedListPager(Model, page => Url.Action("SanPhamNCC", new { @MaNCC = ViewBag.NhaCC, page
+        }))
+</div>
+
+
+<style>
+    .MenuTrang li
+        {
+            display: inline;
+        }
+
+# product {
+        background: #fff;
+        padding: 50px;
+        border: 1px solid #c2c5ce;
+        border-radius: 0 !important;
+        transition: box-shadow 0.5s;
+    }
+
+# product:hover {
+    background-color: white;
+            box-shadow: 10px 0px 10px #17bed2 !important;
+        }
+</style>
+
+@section scripts{
+    <script>
+        $(function () {
+            $(".text-uppercase").click(function () {
+                pid = $(this).attr("data-id");
+                $.ajax({
+                    url: "/Cart/Add",
+                    data: { id: pid },
+                    success: function (response) {
+                        $("#soluong").html('<i class="fa fa-shopping-cart" aria-hidden="false"></i>' + '(' + response.Count + ')');
+
+                    }
+                });
+
+
+            });
+        });
+    </script>
+}

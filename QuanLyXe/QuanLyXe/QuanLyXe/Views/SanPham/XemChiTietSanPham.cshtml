@@ -1,0 +1,95 @@
+﻿@using QuanLyXe.Models;
+@model SanPham
+<link href="~/Content/css/XemChiTiet.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "XemChiTietSanPham";
+    Layout = "~/Views/Shared/NguoiDungLayout.cshtml";
+}
+
+<style>
+    .Xemchitiet {
+        display: none;
+    }
+
+    .nhacc {
+        display: none;
+    }
+
+</style>
+@section XemChiTiet{
+    @* <h2 style="text-align:center">Xem Chi Tiết Sản Phẩm</h2>
+        <div class="container">
+            <div class="clearfix">
+                <div class="ver-center">
+                    <div class="ver-center-aligned">
+                        <div class="promo-section-col">
+                            <img src="@Url.Content("~/HinhAnhSP/"+Model.HinhAnh)" class="img-responsive" alt="Content Image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-section-img-right" style="padding-top: 128px">
+            <div id="TenSanPham"><span style="color:lightseagreen">Tên Sản Phẩm:</span>@Model.TenSP</div>
+            <div id="MaLoai"><span style="color:lightseagreen">Loại Sản Phẩm:</span> @ViewBag.TenLoai</div>
+            <div id="NhaCC"><span style="color:lightseagreen">Nhà Cung Cấp:</span> @ViewBag.NhaCC</div>
+            <div id="GiaBan"><span style="color:forestgreen;font-weight:normal;">Đơn Giá</span><h3>@String.Format("{0:0,0}", Model.GiaBan) VNĐ</h3></div>
+            <br />
+    *@
+    <div class="row row-space-1">
+        <div class="col-sm-5 sm-margin-b-2">
+            <img src="@Url.Content("~/HinhAnhSanPham/"+Model.HinhAnh)" class="img-responsive" alt="Content Image" />
+            </div>
+            <div align="center"class="col-sm-7 sm-margin-b-2">
+                <div id="TenSanPham"><span style="color:lightseagreen">Tên Sản Phẩm:</span>@Model.TenSP</div>
+                <div id="MaLoai"><span style="color:lightseagreen">Loại Sản Phẩm:</span> @ViewBag.TenLoai</div>
+                <div id="NhaCC"><span style="color:lightseagreen">Nhà Cung Cấp:</span> @ViewBag.NhaCC</div>
+                
+                <div id="GiaBan"><span style="color:forestgreen;font-weight:normal;">Đơn Giá</span><h3>@String.Format("{0:0,0}", Model.GiaBan) VNĐ</h3></div>
+           @using (Html.BeginForm())
+           {
+            @*<input type="submit" value="Mua Hàng &#xf07a;" id="btnGioHang" class="btn-theme btn-theme-sm btn-default-bg text-uppercases" />*@
+            <input type="button" title="Add to Cart" value="Mua Hàng &#xf07a;" id="btnGioHang" class="btn-theme btn-theme-sm btn-default-bg text-uppercase" data-id="@Model.MaSP" />
+              
+                   
+           }
+                
+                   
+
+          
+                <div >
+                    @*<a href="@Model.ThanhToanTT" class="btn-theme btn-theme-sm btn-default-bg text-uppercases" style="left: 40%;border-radius: 10px;padding: 14px 28px;" ><img src="http://www.baokim.vn/developers/uploads/baokim_btn/" alt="Thanh Toán" border="0" title="Thanh toán trực tuyến an toàn dùng tài khoản Ngân hàng (VietcomBank, TechcomBank, Đông Á, VietinBank, Quân Đội, VIB, SHB,... và thẻ Quốc tế (Visa, Master Card...) qua Cổng thanh toán trực tuyến BảoKim.vn"><i class="fas fa-credit-card"></i>Thanh Toán</a>*@
+                    <a href="@Model.ThanhToanTT" class="btn-theme btn-theme-sm btn-default-bg text-uppercases" style="left: 40%;border-radius: 10px;padding: 14px 28px;"><img src="http://www.baokim.vn/developers/uploads/baokim_btn/thanhtoan-l.png" /></a>
+                </div>
+                </div>
+        </div>
+      
+            
+        
+}
+@section scripts{
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="~/Content/js/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+<script>
+        $(function () {
+            $(".text-uppercase").click(function () {
+                pid = $(this).attr("data-id");
+                $.ajax({
+                    url: "/Cart/Add",
+                    data: { id: pid },
+                    success: function (response) {
+                        $("#soluong").html('<i class="fa fa-shopping-cart" aria-hidden="false"></i>' + '(' + response.Count + ')');
+
+                    }
+                });
+
+
+            });
+        });
+</script>
+    }

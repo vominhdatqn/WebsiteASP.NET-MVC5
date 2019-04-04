@@ -1,0 +1,33 @@
+﻿@model QuanLyXe.Models.NghiepVu
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Xóa Nghiệp Vụ</h2>
+
+<h3>Bạn Có Thực Sự Muốn Xóa?</h3>
+<div>
+    <h4>Nghiệp Vụ</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenNghiepVu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNghiepVu)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i>Xóa</button>
+            <a href="@Url.Action("Index","NghiepVus")" class="btn btn-info btn-sm"><i class="fa fa-angle-left"></i>Trở Về Quản Lý</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,448 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Website Bán Linh Kiện Máy Tính</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="~/Content/vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
+    <link href="~/Content/vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- THEME STYLES -->
+    <link href="~/Content/css/layout.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="~/Content/font-awesome-4.7.0/fontawesome-all.min.js"></script>
+
+    @*<script src="~/Content/bootstrap-hover-dropdown.min.js"></script>
+    <script src="~/Content/bootstrap-hover-dropdown.js"></script>*@
+    @*<script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdownHover(options);
+        });
+       
+    </script>*@
+    <link href="~/Content/cssuser.css" rel="stylesheet" />
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+<body>
+
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a class="logo-wrap" href="index.html">
+                            <img class="~/logo-img logo-img-main" src="~/img/logo.png" alt="Asentus Logo">
+                            <img class="~/logo-img logo-img-active" src="~/img/logo-dark.png" alt="Asentus Logo">
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="navbar-nav navbar-nav-right">
+                            <li class="nav-item">@Html.ActionLink("Trang Chủ", "Index", "QuanLyLinhKien", null, htmlAttributes: new { @class = "nav-item-child nav-item-hover active" })</li>
+                            <li class="dropdown">
+                                <a class="nav-item-child nav-item-hover" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false" aria-expanded="true" href="about.html"><i class="fa fa-caret-down"></i>Danh Mục Mặt Hàng</a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.Action("LoaiSanPhamPartial", "LoaiSanPham")</li>
+                                    @*<li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">Change Email</a></li>
+                                    <li><a tabindex="-1" href="#">Change Password</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">Logout</a></li>*@
+                                </ul>
+                            </li>        
+                            <li class="dropdown">
+                                <a class="nav-item-child nav-item-hover" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false" aria-expanded="true" href="about.html"><i class="fa fa-caret-down"></i>Nhà Cung Cấp</a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.Action("DanhNhaCC", "NhaCungCap")</li>                   
+                                    @*<li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">Change Email</a></li>
+                                    <li><a tabindex="-1" href="#">Change Password</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">Logout</a></li>*@
+                                </ul>
+                            </li>
+                           
+                            <li class="nav-item">@Html.Partial("_CartInfo")</li>
+                            <li class="nav-item"><a href="~/Admin/Home/Login" class="nav-item-child nav-item-hover">LoginAdmin</a></li>
+                            @if (Session["MaKH"] != null)
+                            {
+                             <li  class="nav-item"><a class="nav-item-child nav-item-hover" href="@Url.Action("HienThi", "NguoiDung")">@Session["TenKH"]</a></li>
+                             <li class="nav-item">@Html.ActionLink("Log out", "DangXuat", "NguoiDung", null, htmlAttributes: new { @class = "nav-item-child nav-item-hover" })</li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">@Html.ActionLink("Đăng Nhập", "DangNhap", "NguoiDung", null, htmlAttributes: new { @class = "nav-item-child nav-item-hover" })</li>
+                                <li class="nav-item">@Html.ActionLink("Đăng Ký", "DangKy", "NguoiDung", null, htmlAttributes: new { @class = "nav-item-child nav-item-hover" })</li>
+                            }
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--========== END HEADER ==========-->
+    <!--========== SLIDER ==========-->
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div class="container">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+        </div>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive" src="~/img/1920x1080/01.jpg" alt="Slider Image">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-40">
+                            <h1 class="carousel-title">15DTH14 - DESIGN</h1>
+                                <p> Tìm Kiếm Theo Tên Sản Phẩm</p>
+                            @using (Html.BeginForm("KetQuaTimKiem", "TimKiem", FormMethod.Post))
+                            {
+                                <div class="fa-3x" style="width: 395px">
+                                    <input type="text" class="form-control footer-input margin-b-2" style="width: 320px;height:52px;float: left" name="txtTimKiem" placeholder="Tìm Kiếm..." required="required">
+                                    <button type="submit" style="font-size: 32px;margin: -1px;margin-left: -48px;padding-top: 7px;height:52px"><i class="fas fa-search"></i></button>
+                                </div>
+
+                            }
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!--========== SLIDER ==========-->
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Service -->
+    <div class="Xemchitiet">
+        @RenderBody()
+    </div>
+
+  <br />
+   
+    <!-- Promo Section -->
+    <div class="bg-color-sky-light">
+        <div class="content-lg container">
+                    @RenderSection("XemChiTiet", false)
+                </div>
+                </div>
+                <!-- End Promo Section -->
+                <!-- End Clients -->
+                <!-- Testimonials -->
+                <div class="content-lg container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <h2>Customer Reviews</h2>
+
+                            <!-- Swiper Testimonials -->
+                            <div class="swiper-slider swiper-testimonials">
+                                <!-- Swiper Wrapper -->
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <blockquote class="blockquote">
+                                            <div class="margin-b-20">
+                                                Website đó phải có tốc độ tải trang nhanh. Theo thống kê chung, người dùng không đủ kiên nhẫn quá 10 giây khi vào một trang web mà vẫn chưa thấy có thành phần nào trong trang web xuất hiện.
+                                            </div>
+                                            <div class="margin-b-20">
+                                                Website đó phải có sự tương tác cao, giữ chân được người dùng ở lâu hơn trên trang web của bạn để tìm hiểu thông tin. Từ đó cũng giúp cho website của bạn tăng được tỉ lệ chuyển đổi từ một người truy cập web trở thành khách hàng của bạn cao hơn.
+                                            </div>
+                                            <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <blockquote class="blockquote">
+                                            <div class="margin-b-20">
+                                                Website cần phải được tối ưu về tốc độ và tối ưu về SEO. Về tốc độ, truy cập nhanh hay chậm có thể do mạng của từng người, do hosting (server)... nhưng website nên được tối ưu hình ảnh, cách load trang để đạt tốc độ tối đa, nhanh nhất có thể. Về SEO, cần tối ưu onpage đối với nội dung, các từ khoá... để công cụ tìm kiếm có thể tìm thấy dễ dàng.
+                                            </div>
+                                            <div class="margin-b-20">
+                                                Website phải có nội dung đầy đủ, phong phú, thông tin cần thiết cho người truy cập. Nếu không, một website có nội dung sơ sài sẽ đồng nghĩa với việc website đó không có lượng truy cập cao.
+                                            </div>
+                                            <p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <!-- End Swiper Wrapper -->
+                                <!-- Pagination -->
+                                <div class="swiper-testimonials-pagination"></div>
+                            </div>
+                            <!-- End Swiper Testimonials -->
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+             
+                <div class="masonry-grid">
+                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1">
+                        <div class="work wow fadeInUp" data-wow-duration=".1" data-wow-delay=".1s">
+                            <div class="work-overlay">
+                                <img class="full-width img-responsive" src="~/img/800x400/02.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Art Of Coding</h3>
+                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8">
+                        <!-- Work -->
+                        <div class="work wow fadeInUp" data-wow-duration=".2" data-wow-delay=".1s">
+                            <div class="work-overlay">
+                                <img class="full-width img-responsive" src="~/img/800x400/01.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Art Of Coding</h3>
+                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                        <!-- End Work -->
+                    </div>
+                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                        <!-- Work -->
+                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                            <div class="work-overlay">
+                                <img class="full-width img-responsive" src="~/img/397x400/01.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Clean Design</h3>
+                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                        <!-- End Work -->
+                    </div>
+                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                        <!-- Work -->
+                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
+                            <div class="work-overlay">
+
+                                <img class="full-width img-responsive" src="~/img/397x300/01.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Clean Design</h3>
+                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                        <!-- End Work -->
+                    </div>
+                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                        <!-- Work -->
+                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
+                            <div class="work-overlay">
+                                <img class="full-width img-responsive" src="~/img/397x300/02.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Clean Design</h3>
+                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                        <!-- End Work -->
+                    </div>
+                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                        <!-- Work -->
+                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".5s">
+                            <div class="work-overlay">
+                                <img class="full-width img-responsive" src="~/img/397x300/03.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Clean Design</h3>
+                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                        <!-- End Work -->
+                    </div>
+                </div>
+                <!-- End Masonry Grid -->
+                <!-- End Work -->
+                <!--========== END PAGE LAYOUT ==========-->
+                <!--========== FOOTER ==========-->
+                <footer class="footer" style="background:#333">
+                    <!-- Links -->
+                    <div class="footer-seperator">
+                        <div class="content-lg container">
+                            <div class="row">
+                                <div class="col-sm-2 sm-margin-b-50">
+                                    <!-- List -->
+                                    <ul class="list-unstyled footer-list">
+                                        <li class="footer-list-item"><a class="footer-list-link" href="#">Home</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" href="#">About</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" href="#">Products</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" href="#">Pricing</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" href="#">Contact</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" href="#">Terms</a></li>
+                                    </ul>
+                                    <!-- End List -->
+                                </div>
+                                <div class="col-sm-4 sm-margin-b-30">
+                                    <!-- List -->
+                                    <ul class="list-unstyled footer-list">
+                                        <li class="footer-list-item"><a class="footer-list-link" target="_blank" href="http://Twitter.com">Twitter</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" target="_blank" href="http://Facebook.com">Facebook</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" target="_blank" href="http://Instagram.com">Instagram</a></li>
+                                        <li class="footer-list-item"><a class="footer-list-link" target="_blank" href="http://YouTube.com">YouTube</a></li>
+                                    </ul>
+                                    <!-- End List -->
+                                </div>
+                                
+                                <div class="col-sm-5 sm-margin-b-30">
+
+                                    <h2 class="color-white">Send Us A Note</h2>
+                                        @using (Html.BeginForm("Sendnote", "sendnote", FormMethod.Post,new { enctype = "multipart/form-data" }))
+                                        {
+                                    <input name="txtten" type="text" class="form-control footer-input margin-b-20" placeholder="Nhập họ tên." required="required">
+                                    <input name="txtemail" type="email" class="form-control footer-input margin-b-20" placeholder="Nhập Email." required="required">
+                                    <input name="txtsdt" type="text" class="form-control footer-input margin-b-20" placeholder="Nhập Phone." required="required">
+                                    <textarea name="txtnote" class="form-control footer-input margin-b-30" rows="6" placeholder="Hãy comments ở đây..." required="required"></textarea>
+                                    <button onclick="Sendnote" type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Gửi yêu cầu</button>
+                                            @*<a href="@Url.Action("Sendnote","sendnote")" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Gửi yêu cầu</a>*@
+                                        }
+                                </div>
+                               
+                                    
+
+                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div id="fb-root"></div>
+                                    <script>
+                                            (function(d, s, id) {
+                                              var js, fjs = d.getElementsByTagName(s)[0];
+                                              if (d.getElementById(id)) return;
+                                              js = d.createElement(s); js.id = id;
+                                              js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=511729315888979&autoLogAppEvents=1';
+                                              fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, 'script', 'facebook-jssdk'));
+                                    </script>
+                                    <div class="fb-comments" data-href="https://zuishopmvc55.somee.com" data-width="600" data-numposts="5"></div>
+                                </div>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2269.615297486967!2d106.71277329944493!3d10.801833702808501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a5a63acc09%3A0x6dc64780a0e43fda!2zxJDhuqFpIGjhu41jIEh1dGVjaA!5e0!3m2!1svi!2s!4v1523606372199"  width="487" height="165" frameborder="0" style="border:0;    padding-top: 9px;  " allowfullscreen></iframe>
+                                </div>
+                                    @*<div id="fb-root"></div>
+    <script>
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=511729315888979&autoLogAppEvents=1';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+    </script>
+        <div class="fb-comments" data-href="https://zuishopmvc55.somee.com" data-width="600" data-numposts="5"></div>*@
+                                </div>
+                            
+                                
+                                </div>
+                            <!--// end row -->
+                        </div>
+                    <!-- End Links -->
+                    <!-- Copyright -->
+                    <div class="content container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img class="footer-logo" src="~/img/logo.png" alt="Asentus Logo">
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <p class="margin-b-0"><a class="color-base fweight-700" href="http://keenthemes.com/preview/asentus/">WebsiteBanXe</a>zuishopmvc55.somee.com: <a class="color-base fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
+                            </div>
+                        </div>
+                        <!--// end row -->
+                    </div>
+                    <!-- End Copyright -->
+                </footer>
+                <!--========== END FOOTER ==========-->
+                <!-- Back To Top -->
+                <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+                <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+                <!-- CORE PLUGINS -->
+                <script src="~/Content/vendor/jquery.min.js" type="text/javascript"></script>
+                <script src="~/Content/vendor/jquery-migrate.min.js" type="text/javascript"></script>
+                <script src="~/Content/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+                <!-- PAGE LEVEL PLUGINS -->
+                <script src="~/Content/vendor/jquery.easing.js" type="text/javascript"></script>
+                <script src="~/Content/vendor/jquery.back-to-top.js" type="text/javascript"></script>
+                <script src="~/Content/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+                <script src="~/Content/vendor/jquery.wow.min.js" type="text/javascript"></script>
+                @*<script src="~/Content/vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>*@
+                <script src="~/Content/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+                <script src="~/Content/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+                <!-- PAGE LEVEL SCRIPTS -->
+                <script src="~/Content/js/layout.min.js" type="text/javascript"></script>
+                <script src="~/Content/js/components/wow.min.js" type="text/javascript"></script>
+                @*<script src="~/Content/js/components/swiper.min.js" type="text/javascript"></script>*@
+                @*<script src="~/Content/js/components/masonry.min.js" type="text/javascript"></script>*@
+
+    <div class="fb-livechat">
+        <div class="ctrlq fb-overlay"></div>
+        <div class="fb-widget">
+            <div class="ctrlq fb-close"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/Website-B%C3%A1n-Linh-Ki%E1%BB%87n-M%C3%A1y-T%C3%ADnh-188420035212986/?modal=admin_todo_tour" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/digital.inspiration/" class="fb-xfbml-parse-ignore"> </blockquote>
+            </div>
+            <div class="fb-credit">
+                <a href="https://www.labnol.org/software/facebook-messenger-chat-widget/9583/" target="_blank">Facebook Chat Widget by Digital Inspiration</a>
+            </div>
+            <div id="fb-root"></div>
+        </div>
+        <a href="https://m.me/digital.inspiration" title="Send us a message on Facebook" class="ctrlq fb-button"></a>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>$(document).ready(function(){var t={delay:125,overlay:$(".fb-overlay"),widget:$(".fb-widget"),button:$(".fb-button")};setTimeout(function(){$("div.fb-livechat").fadeIn()},8*t.delay),$(".ctrlq").on("click",function(e){e.preventDefault(),t.overlay.is(":visible")?(t.overlay.fadeOut(t.delay),t.widget.stop().animate({bottom:0,opacity:0},2*t.delay,function(){$(this).hide("slow"),t.button.show()})):t.button.fadeOut("medium",function(){t.widget.stop().show().animate({bottom:"30px",opacity:1},2*t.delay),t.overlay.fadeIn(t.delay)})})});</script>
+
+</body>
+<!-- END BODY -->
+</html>

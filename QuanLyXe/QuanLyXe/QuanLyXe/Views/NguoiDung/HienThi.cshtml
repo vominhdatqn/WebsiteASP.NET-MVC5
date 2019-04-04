@@ -1,0 +1,391 @@
+﻿@*@using QuanLyXe.Models*@
+@model QuanLyXe.Models.KhachHang
+@{
+    ViewBag.Title = "HienThi";
+    Layout = "~/Views/Layout/HienthiTT.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.11.1.min.js"></script>
+<link href="~/Content/css/GioHang.css" rel="stylesheet" />
+@*<h2 style="text-align:center">THÔNG TIN KHÁCH HÀNG</h2>*@
+@*@{
+    KhachHang kh = (KhachHang)Session["MaKH"];
+}*@
+@*<table align="center">
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <tr style="height:40px">
+            <td> Họ tên khách hàng:</td>
+            <td style="font-weight:bold">  @Model.TenKH </td>
+        </tr>
+        <tr style="height:40px">
+            <td> Địa chỉ:</td>
+            <td style="font-weight:bold">  @Model.DiaChi</td>
+        </tr>
+        <tr style="height:40px">
+            <td> Địện thoại:</td>
+            <td style="font-weight:bold">  @Model.DienThoai</td>
+        </tr>
+        <tr style="height:40px">
+            <td> Ngày Sinh:</td>
+            <td style="font-weight:bold">@Model.NgaySinh</td>
+        </tr>
+        <tr style="height:40px">
+            <td></td>
+            <td id="tooltip">
+                <a href="@Url.Action("SuaThongTin","NguoiDung",new {id=Model.MaKH })">Thay Đổi</a>*@
+                @*@using (Html.BeginForm("DatHang", "GioHang"))
+                {
+                    <input type="submit" value="Order" class="btn btn-success btn-block" /><span class="tooltiptext">Đặt hàng</span>
+                }*@
+            @*</td>
+
+        </tr>
+    }
+</table>
+<style>
+    .btn-sm,
+    .btn-group-sm > .btn {
+        padding: 7px 10px !important;
+    }
+
+    #tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+        #tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+            /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        #tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+</style>*@
+
+<div class="tab-content">
+<div class="tab-pane active" id="personal" role="tabpanel">
+    <div class="card">
+        <div class="card-header">
+            
+                <a href="@Url.Action("SuaThongTin","NguoiDung",new {id=Model.MaKH })" class="btn btn-primary waves-effect waves-light f-right"> <i class="icofont icofont-edit"></i>Chỉnh Sửa</a>
+                <a href="@Url.Action("Index","Home")" class="btn btn-info btn-sm"><i class="fa fa-angle-left"></i>Trở Về Quản Lý</a>
+        </div>
+        <div class="card-block">
+            <div class="view-info">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="general-info">
+                            <div class="row">
+                                <div class="col-lg-12 col-xl-6">
+                                    <table class="table m-0">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Full Name</th>
+                                                <td>@Model.TenKH </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Gender</th>
+                                                <td>@Model.GioiTinh</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Birth Date</th>
+                                                <td>@Model.NgaySinh</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Location</th>
+                                                <td>@Model.DiaChi  -  VietNamese</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end of table col-lg-6 -->
+
+                                <div class="col-lg-12 col-xl-6">
+                                    <table class="table m-0">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Email</th>
+                                                <td><a href="#!">@Model.Email</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Mobile Number</th>
+                                                <td>@Model.DienThoai</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end of table col-lg-6 -->
+                            </div>
+                            <!-- end of row -->
+                        </div>
+                        <!-- end of general info -->
+                    </div>
+                    <!-- end of col-lg-12 -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of view-info -->
+            @* <div class="edit-info">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="general-info">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-ui-user"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <input type="text" class="md-form-control">
+                                                                <label>Full Name</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+
+                                                        <div class="form-radio">
+                                                            <form>
+                                                                <div class="md-group-add-on">
+                                                                    <span class="md-add-on">
+                                                                        <i class="icofont icofont-group-students"></i>
+                                                                    </span>
+                                                                    <div class="radio radiofill radio-inline">
+                                                                        <label>
+                                                                            <input type="radio" name="radio"><i class="helper"></i> Male
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio radiofill radio-inline">
+                                                                        <label>
+                                                                            <input type="radio" name="radio"><i class="helper"></i> Female
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-ui-calendar"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <input type="text" id="date" class="md-form-control form-control floating-label">
+                                                                <label>Birthday Date</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-users-alt-4"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <select class="md-form-control">
+                                                                    <option>Select Marital Status</option>
+                                                                    <option>Married</option>
+                                                                    <option>Unmarried</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-location-pin"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <textarea class="md-form-control" cols="2" rows="4"></textarea>
+                                                                <label>Address</label>
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- end of table col-lg-6 -->
+
+                                    <div class="col-lg-6">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-email"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <input type="email" class="md-form-control">
+                                                                <label>Email</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-mobile-phone"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <input type="number" class="md-form-control">
+                                                                <label>Mobile Number</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-social-twitter"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <input type="email" class="md-form-control">
+                                                                <label>Twitter Id</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-social-skype"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <input type="email" class="md-form-control">
+                                                                <label>Skype Id</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="md-group-add-on">
+                                                            <span class="md-add-on">
+                                                                <i class="icofont icofont-web"></i>
+                                                            </span>
+                                                            <div class="md-input-wrapper">
+                                                                <input type="text" class="md-form-control">
+                                                                <label>Website</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                    <!-- end of table col-lg-6 -->
+                                </div>
+                                <!-- end of row -->
+                                <div class="text-center">
+                                    <a href="#!" class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                                    <a href="#!" id="edit-cancel" class="btn btn-default waves-effect">Cancel</a>
+                                </div>
+                            </div>
+                            <!-- end of edit info -->
+                        </div>
+                        <!-- end of col-lg-12 -->
+                    </div>
+                    <!-- end of row -->
+
+                </div>*@
+            <!-- end of view-info -->
+        </div>
+        <!-- end of card-block -->
+    </div>
+    <!-- end of card-->
+    <!-- end of row of education and experience  -->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header"><h5 class="card-header-text">Professional Skill</h5></div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-md-3 faq-chart">
+                            <div class="chart" data-percent="75" data-barColor="#5cb85c" data-trackColor="#fff" data-lineWidth="5" data-barSize="150">
+                                <div class="chart-percent"><span></span>%</div>
+                            </div>
+                            <!-- end of creativity chart -->
+                            <h5>Creativity</h5>
+                        </div>
+                        <!-- end of col-lg-3 creativity chart -->
+                        <div class="col-md-3 faq-chart">
+                            <div class="chart" data-percent="90" data-barColor="#c9302c" data-trackColor="#fff" data-lineWidth="5" data-barSize="150">
+                                <div class="chart-percent"><span></span>%</div>
+                            </div>
+                            <!-- end of social media chart -->
+                            <h5>Social Media</h5>
+                        </div>
+                        <!-- end of col-lg-3 social media chart -->
+                        <div class="col-md-3 faq-chart">
+                            <div class="chart" data-percent="83" data-barColor="#ec971f" data-trackColor="#fff" data-lineWidth="5" data-barSize="150">
+                                <div class="chart-percent"><span></span>%</div>
+                            </div>
+                            <!-- end of marketing chart -->
+                            <h5>Marketing</h5>
+                        </div>
+                        <!-- end of col-lg-3 marketing chart -->
+                        <div class="col-md-3 faq-chart">
+                            <div class="chart" data-percent="68" data-barColor="#025aa5" data-trackColor=" #fff" data-lineWidth="5" data-barSize="150">
+                                <div class="chart-percent"><span></span>%</div>
+                            </div>
+                            <!-- end of leadership chart -->
+                            <h5>Leadership</h5>
+                        </div>
+                        <!-- end of col-lg-3 leadership chart -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of card block -->
+            </div>
+            <!-- end of card -->
+        </div>
+        <!-- end of col-lg-12 -->
+    </div>
+    <!-- end of row -->
+
+</div>
+<!-- end of accrodion box class -->
+                        </div>

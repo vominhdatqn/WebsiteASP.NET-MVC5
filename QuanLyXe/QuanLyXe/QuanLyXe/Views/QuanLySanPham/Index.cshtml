@@ -1,0 +1,128 @@
+﻿
+@using PagedList.Mvc;
+@model PagedList.IPagedList<QuanLyXe.Models.SanPham>
+
+
+<link href="~/Content/TrangChu.css" rel="stylesheet" />
+<link href="~/Content/css/layout.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center;color:#429841;">Quản Lý Sản Phẩm</h2>
+
+<p>
+    <a href="@Url.Action("ThemMoi","QuanLySanPham")" class="btn btn-success btn-sm"><i class="fas fa-plus-square"></i>Thêm Mới</a>
+</p>
+<table class="table">
+    <tr style="display:table-row;vertical-align: inherit;border-color: inherit;">
+        <th style="width:3%;text-align:center">
+           @Html.DisplayNameFor(model=>model.First().MaSP)
+        </th>
+        <th style="width:10%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().TenSP)
+        </th>
+        <th style="width:10%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().NgayCapNhat)
+        </th>
+        <th style="width:10%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().HinhAnh)
+        </th>
+        <th style="width:37%;text-align:center">
+           @Html.DisplayNameFor(model => model.First().MoTa)
+        </th>
+        <th style="width:10%;text-align:center">
+           @Html.DisplayNameFor(model => model.First().GiaBan)
+        </th>
+        <th style="width:3%;text-align:center">
+           @Html.DisplayNameFor(model => model.First().SoLuongTon)
+        </th>
+        <th style="width:3%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().SanPhamMoi)
+        </th>
+        <th style="width:3%;text-align:center">
+           @Html.DisplayNameFor(model => model.First().MaLoai)
+        </th>
+        <th style="width:4%">
+           @Html.DisplayNameFor(model => model.First().MaNCC)
+        </th>
+        <th style="width:7%"></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr style="display:table-row;vertical-align: inherit;border-color: inherit;">
+        <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.MaSP)
+        </td>
+        <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.TenSP)
+        </td>
+        <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.NgayCapNhat)
+        </td>
+        <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            <img class="full-width img-responsive" src="@Url.Content("~/HinhAnhSP/"+item.HinhAnh)" alt="Portfolio Image" width='150' height='100' />
+        </td>
+        <td style="width:37%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.GiaBan)
+        </td>
+        <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.SoLuongTon)
+        </td>
+        <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.SanPhamMoi)
+        </td>
+        <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.MaLoai)
+        </td>
+        <td style="width:4%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+            @Html.DisplayFor(modelItem => item.NhaCungCap.TenNCC)
+        </td>
+        <td>
+            <a href="@Url.Action("ChinhSua","QuanLySanPham", new {MaSP=item.MaSP})" class="btn btn-warning btn-sm" style="width:93px"><i class="fas fa-edit"></i>Chỉnh Sửa</a>
+            <a href="@Url.Action("HienThi","QuanLySanPham",new {MaSP=item.MaSP})" class="btn btn-info btn-sm" style="width:93px;text-align:left"><i class="fas fa-info-circle"></i>Hiển Thị</a>
+            <a href="@Url.Action("Xoa","QuanLySanPham",new {MaSP=item.MaSP})" class="btn btn-danger btn-sm" style="width:93px;text-align:left"><i class="fas fa-trash-alt"></i>Xóa</a>
+
+        </td>
+    </tr>
+}
+
+</table>
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+
+    #product {
+        background: #fff;
+        padding: 50px;
+        border: 1px solid #c2c5ce;
+        border-radius: 0 !important;
+        transition: box-shadow 0.5s;
+    }
+
+        #product:hover {
+            background-color: white;
+            box-shadow: 10px 0px 10px #17bed2 !important;
+        }
+
+ .table th{              
+    padding: .75rem;
+    vertical-align:middle;
+    border-top: 1px solid #dee2e6;
+  }
+ .table td{
+      padding: .75rem;
+    vertical-align:middle;
+    border-top: 1px solid #dee2e6;
+ }
+</style>

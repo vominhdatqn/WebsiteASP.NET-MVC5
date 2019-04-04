@@ -1,0 +1,50 @@
+﻿@model IEnumerable<QuanLyXe.Models.NhaCungCap>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Danh Sách Nhà Cung Cấp</h2>
+
+<p>
+    <a href="@Url.Action("Create","NhaCungCaps")" class="btn btn-success btn-sm"><i class="fas fa-plus-square"></i>Thêm Mới</a>
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenNCC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DienThoai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNCC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DienThoai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiaChi)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.MaNCC }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaNCC }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaNCC })*@
+            <a href="@Url.Action("Edit","NhaCungCaps", new { id = item.MaNCC })" class="btn btn-warning btn-sm" style="width:93px"><i class="fas fa-edit"></i>Chỉnh Sửa</a>
+            <a href="@Url.Action("Details","NhaCungCaps",new { id = item.MaNCC })" class="btn btn-info btn-sm" style="width:93px;text-align:left"><i class="fas fa-info-circle"></i>Hiển Thị</a>
+            <a href="@Url.Action("Delete","NhaCungCaps",new { id = item.MaNCC })" class="btn btn-danger btn-sm" style="width:93px;text-align:left"><i class="fas fa-trash-alt"></i>Xóa</a>
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,51 @@
+﻿@model QuanLyXe.Models.KhachHang
+@{
+    ViewBag.Title = "DoiMatKhau";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutDoiMatKhau.cshtml";
+}
+
+<h2>DoiMatKhau</h2>
+@using (Html.BeginForm("DoiMatKhau", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @*@Html.AntiForgeryToken()*@
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="row margin">
+        <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input class="validate" value="@Model.TenKH" id="username" name="txtTen" type="text" required="required">
+            <label for="username" class="center-align">Username</label>
+        </div>
+    </div>
+    
+
+    <div class="row margin">
+        <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input class="validate" id="username" name="MatKhau" type="password" required="required">
+            <label for="username" class="center-align">Password</label>
+        </div>
+    </div>
+    @*<div class="row margin">
+            <div class="input-field col s12">
+                <i class="mdi-social-person-outline prefix"></i>
+                <input class="validate" id="username" name="txtadmin" type="text" min="0" required="required">
+                <label for="username" class="center-align">Admin</label>
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="input-field col s12">
+                <i class="mdi-social-person-outline prefix"></i>
+                <input class="validate" id="username" name="txtchophep" type="text" min="0" required="required">
+                <label for="username" class="center-align">Cho Phép</label>
+            </div>
+        </div>*@
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="REGISTER" class="btn waves-effect waves-light col s12" />
+        </div>
+    </div>
+}
+
+

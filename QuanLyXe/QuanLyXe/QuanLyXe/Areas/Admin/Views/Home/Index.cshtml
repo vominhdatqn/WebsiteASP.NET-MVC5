@@ -1,0 +1,237 @@
+﻿@model QuanLyXe.Models.KhachHang
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/exporting.js"></script>
+<script src="~/Scripts/highcharts.js"></script>
+<script src="~/Areas/Admin/Models/TemplateAdmin/vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script>
+<script type="text/javascript">rm2d_ki101('0','256','128','5dkiikolymq','ff0000',0);</script>
+<script type="text/javascript" src="http://jf.revolvermaps.com/t.js"></script>
+<script type="text/javascript">rmt_ki101('0',150,'5ug0auaafei','ff0000');</script>
+<script type="text/javascript" src="http://jf.revolvermaps.com/r.js"></script>
+<script type="text/javascript">rm_f1st('0','220','true','false','000000','59etflkr0um','true','ff0000');</script><noscript><applet codebase="http://rf.revolvermaps.com/j" code="core.RE" width="220" height="220" archive="g.jar"><param name="cabbase" value="g.cab" /><param name="r" value="true" /><param name="n" value="false" /><param name="i" value="59etflkr0um" /><param name="m" value="0" /><param name="s" value="220" /><param name="c" value="ff0000" /><param name="v" value="true" /><param name="b" value="000000" /><param name="rfc" value="true" /></applet></noscript>
+  <script type="text/javascript" src="http://jf.revolvermaps.com/t.js"></script>
+<script type="text/javascript">rmt_ki101('0',150,'5ug0auaafei','ff0000');</script>
+ <script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script>
+<script type="text/javascript">rm2d_ki101('0','256','128','5dkiikolymq','ff0000',0);</script>
+
+ @*<div class="jumbotron">*@
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Trang Chủ</li>
+    </ol>
+    <!-- Icon Cards-->
+    <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-primary o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon">
+                        <i class="fa fa-fw fa-comments"></i>
+                    </div>
+                    <div class="mr-5">@ViewBag.ThanhTien - Tổng Doanh Số</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="@Url.Action("Index","ChiTietSanPhams")">
+                    <span class="float-left">View Details</span>
+                    <span class="float-right">
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-warning o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon">
+                        <i class="fa fa-fw fa-list"></i>
+                    </div>
+                    <div class="mr-5"> @ViewBag.User - Khách Hàng</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="@Url.Action("Index","KhachHangs")">
+                    <span class="float-left">View Details</span>
+                    <span class="float-right">
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon">
+                        <i class="fa fa-fw fa-shopping-cart"></i>
+                    </div>
+                    <div class="mr-5">@ViewBag.NewOder - Tổng Hóa Đơn</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="@Url.Action("Index","DonHangs")">
+                    <span class="float-left">View Details</span>
+                    <span class="float-right">
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-danger o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="mr-5">@ViewBag.TongSL - Tổng Số Lượng Sản Phẩm</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="@Url.Action("Index","ChiTietSanPhams")">
+                    <span class="float-left">View Details</span>
+                    <span class="float-right">
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Area Chart Example-->
+     <div class="row">
+         <div class="col-lg-12">
+             <!-- Example Bar Chart Card-->
+             <div class="card mb-3">
+                 <div class="card-header">
+                     Bar Chart Example
+                 </div>
+                 <div class="card-body">
+                     <div class="row">
+                         <div class="card-body">
+                             <div id="container" style="height:400px;width:900px"></div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="card-footer small text-muted">Updated @ViewBag.Data</div>
+             </div>
+             <!-- Card Columns Example Social Feed-->
+
+         </div>
+
+     </div>
+    <div class="card mb-3">
+        <div class="card-header">
+             Area Chart Example
+        </div>
+        <div class="card-body">
+            <div id="chart_div" style="height:400px;width:900px"></div>
+        </div>
+        <div class="card-footer small text-muted">Updated @ViewBag.Data</div>
+    </div>
+
+
+   
+     @*</div>*@
+    @*<div class="jumbotron">*@
+    @*<div id="container" style="min-width: 600px; height: 400px; max-width: 700px; margin: 0 auto"></div>*@
+    @*</div>*@
+
+    <script>
+        $(document).ready(function () {
+            $.getJSON("/Admin/Home/GetData", function (data) {
+
+
+
+                Highcharts.chart('container', {
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        type: 'pie'
+                    },
+                    title: {
+                        text: 'Số Sản Phẩm Trong Quý 2'
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                style: {
+                                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Brands',
+                        colorByPoint: true,
+                        data: [{
+                            name: 'Thùng CPU',
+                            y: data.sp1
+                        }, {
+                            name: 'Chuột Chơi Game',
+                            y: data.sp3
+                        }, {
+                            name: 'Loa Tai Nghe',
+                            y: data.sp4
+                        }, {
+                            name: 'Bàn Phím Cơ',
+                            y: data.sp5
+                        //}, {
+                        //    name: 'Đế Tản Nhiệt',
+                        //    y: data.sp6
+                        //}, {
+                        //    name: 'Màn Hình Máy Tính',
+                        //    y: data.sp16
+                        }]
+                    }]
+                });
+            });
+        });
+
+    </script>
+@*<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script>
+                var chartData; // globar variable for hold chart data
+                google.load("visualization", "1", { packages: ["corechart"] });
+
+                // Here We will fill chartData
+
+                $(document).ready(function () {
+
+                    $.ajax({
+                        url: "/Admin/Home/GetChartData",
+                        data: "",
+                        dataType: "json",
+                        type: "POST",
+                        contentType: "application/json; chartset=utf-8",
+                        success: function (data) {
+                            chartData = data.d;
+                        },
+                        error: function () {
+                            alert("Error loading data! Please try again.");
+                        }
+                    }).done(function () {
+                        // after complete loading data
+                        google.setOnLoadCallback(drawChart);
+                        drawChart();
+                    });
+                });
+
+
+                function drawChart() {
+                    var data = google.visualization.arrayToDataTable(chartData);
+
+                    var options = {
+                        title: "Company Revenue",
+                        pointSize: 5
+                    };
+
+                    var columnChart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+                    columnChart.draw(data, options);
+
+                }
+
+</script>*@

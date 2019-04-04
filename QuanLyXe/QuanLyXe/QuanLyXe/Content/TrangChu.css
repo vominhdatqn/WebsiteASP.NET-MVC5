@@ -1,0 +1,14 @@
+﻿
+div#SanPham{
+    float:left !important;
+}
+#product{
+     border-left:solid 1px #f1e5e5!important;
+     border-bottom:solid 1px #f1e5e5!important;
+     border-radius:0!important;
+    transition:box-shadow 0.5s!important;
+}
+#product:hover{
+    background-color:white!important;
+    box-shadow:5px 0px 40px #2de023!important;
+}

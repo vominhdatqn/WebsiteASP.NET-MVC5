@@ -1,0 +1,122 @@
+﻿@using QuanLyXe.Models
+@model List<GioHang>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.11.1.min.js"></script>
+<link href="~/Content/css/GioHang.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/NguoiDungLayout.cshtml";
+}
+<script language='javascript'>
+ <!--
+ function isNumberKey(evt)
+ {
+ var charCode = (evt.which) ? evt.which : event.keyCode
+ if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
+ return false;
+ return true;
+ }
+ //-->
+</script>
+<h2 class="text-center">Giỏ Hàng</h2>
+<div class="container">
+    <table id="cart" class="table table-hover table-condensed">
+        <thead>
+            <tr>
+                <th style="width:10%">Mã sản phẩm</th>
+                <th style="width:40%">Tên sản phẩm</th>
+                <th style="width:10%">Giá</th>
+                <th style="width:8%">Số lượng</th>
+                <th style="width:22%" class="text-center">Thành tiền</th>
+                <th style="width:10%"> </th>
+            </tr>
+        </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <td data-th="Price" style="text-align:justify">@item.iMaSP</td>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-5 hidden-xs">
+                            <img src="@Url.Content("~/HinhAnhSanPham/" + item.iHinhAnh)" alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4 class="nomargin">@item.iTenSP</h4>
+                        </div>
+                    </div>
+                </td>
+                @using (Html.BeginForm("CapNhatGioHang", "GioHang", new {@iMaSP=item.iMaSP }))
+                {
+                <td data-th="Price">@String.Format("{0:0,0}", item.iDonGia) VNĐ</td>
+                <td data-th="Quantity">
+                    <input class="form-control text-center" min="1" onKeyPress="return isNumberKey(event)" value="@item.iSoLuong" type="number" name="quantity">
+                </td>
+                <td data-th="Subtotal" class="text-center">@String.Format("{0:0,0}", item.ThanhTien) VNĐ</td>
+                <td class="actions" data-th="" id="tooltip">
+                    <input type="submit" class="btn btn-info btn-sm" data-tooltip-text="Cập Nhật"  value="Update"/><span class="tooltiptext">Cập Nhật</span>          
+                    <a href="@Url.Action("XoaGioHang","GioHang",new { @iMaSP=item.iMaSP})" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>                 
+                </td>
+                }
+            </tr>
+               
+        </tbody>
+    }
+        <tfoot>
+            <tr>
+                <td>
+                    <a href="@Url.Action("Index" , "QuanLyLinhKien")" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+                </td>
+                <td colspan="2" class="hidden-xs">
+                    <strong>Tổng tiền :@Model.Sum(m=>m.ThanhTien).ToString("#,##0").Replace(',','.') VNĐ</strong>
+                </td>
+                <td class="hidden-xs text-center">
+                   <strong>Số Lượng:@Model.Sum(m => m.iSoLuong)</strong>
+                </td>
+                <td id="tooltip">             
+                    @Html.ActionLink("Order","DatHang","GioHang", null, htmlAttributes: new { @class="btn btn-success btn-block" })        
+                    
+                </td>
+                <td>
+                    <a href="@Url.Action("XoaTatCaGioHang" , "GioHang")" class="btn btn-danger btn-sm">Xóa Tất Cả  <i class="fas fa-trash-alt"></i></a>
+                </td>
+             </tr>
+        </tfoot>
+    </table>
+</div>
+<style>
+    .btn-sm,
+.btn-group-sm > .btn {
+  padding: 7px 10px !important;
+}
+
+#tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+#tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+</style>

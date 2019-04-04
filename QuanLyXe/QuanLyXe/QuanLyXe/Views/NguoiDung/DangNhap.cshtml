@@ -1,0 +1,37 @@
+﻿@model QuanLyXe.Models.KhachHang
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/Layout/DangNhap.cshtml";
+}
+
+@using (Html.BeginForm("DangNhap","NguoiDung",FormMethod.Post))
+{
+    <div class="row margin">
+        <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input class="validate" id="username" name="txtTaikhoan" type="text">
+            <label for="email" data-error="wrong" data-success="right" class="center-align">Account</label>
+        </div>
+    </div>
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-action-lock-outline prefix"></i>
+                        <input id="password" type="password" name="txtMatkhau">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                @*<div class="g-recaptcha" data-sitekey="6LcFTVQUAAAAAO5_Xjbtr3MeIB6ZpsoR3YFMRXQg"></div>*@
+                <div class="row">
+                    <div class="input-field col s12 m12 l12  login-text">
+                        <input type="checkbox" id="remember-me" />
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="submit"class="btn waves-effect waves-light col s12" value="LOGIN"/>
+                    </div>
+                </div>
+
+}
+<script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>

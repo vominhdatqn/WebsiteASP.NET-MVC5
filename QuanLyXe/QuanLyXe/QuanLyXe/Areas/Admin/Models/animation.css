@@ -1,0 +1,27 @@
+﻿
+ /*#animation1{
+            position: relative;
+            width: 130px;
+            animation: aniName 2s infinite;
+            -moz-animation: aniName 2s infinite;
+            -webkit-animation: aniName 2s infinite;
+            -o-animation: aniName 2s infinite;
+    }
+ @keyframes aniName {
+   from {left: 0px;}
+    to {left: 80%; color: #cc0000; background: #4cff00;}
+}
+@-moz-keyframes aniName {
+   from {left: 0px;}
+    to {left: 80%; color: #cc0000; background: #4cff00;}
+}
+
+@-webkit-keyframes aniName {
+   from {left: 0px;}
+    to {left: 80%; color: #cc0000; background: #4cff00;}
+}
+
+@-o-keyframes aniName {
+    from {left: 0px;}
+    to {left: 80%; color: #cc0000; background:#4cff00;}
+}*/

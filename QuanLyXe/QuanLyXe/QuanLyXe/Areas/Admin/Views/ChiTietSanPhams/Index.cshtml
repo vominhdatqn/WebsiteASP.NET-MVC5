@@ -1,0 +1,54 @@
+﻿@model IEnumerable<QuanLyXe.Models.ChiTietSanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center;color:#429841;">Quản Lý Chi Tiết Đơn Hàng</h2>
+
+<p>
+    @*<a href="@Url.Action("Create","ChiTietSanPhams")" class="btn btn-success btn-sm"><i class="fas fa-plus-square"></i>Thêm Mới</a>*@
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonGia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonHang.MaDonHang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SanPham.TenSP)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonGia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonHang.MaDonHang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SanPham.TenSP)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            <a href="#" class="btn btn-warning btn-sm" style="width:93px"><i class="fas fa-edit"></i>Chỉ Xem</a>
+
+        </td>
+    </tr>
+}
+
+</table>

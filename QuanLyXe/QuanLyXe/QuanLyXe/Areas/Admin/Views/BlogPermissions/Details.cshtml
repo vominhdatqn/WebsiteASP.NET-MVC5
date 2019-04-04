@@ -1,0 +1,45 @@
+﻿@model QuanLyXe.Models.BlogPermission
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Hiển Thị Blog Cho Phép</h2>
+
+<div>
+    <h4>Blog Cho Phép</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PermisstionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PermisstionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NghiepVu.TenNghiepVu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NghiepVu.TenNghiepVu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.PermissionId }) |
+    @Html.ActionLink("Back to List", "Index")*@
+    <a href="@Url.Action("Edit","BlogPermissions", new {id = Model.PermissionId})" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i>Chỉnh Sửa</a> |
+    <a href="@Url.Action("Index","BlogPermissions")" class="btn btn-info btn-sm"><i class="fa fa-angle-left"></i>Trở Về Quản Lý</a>
+</p>

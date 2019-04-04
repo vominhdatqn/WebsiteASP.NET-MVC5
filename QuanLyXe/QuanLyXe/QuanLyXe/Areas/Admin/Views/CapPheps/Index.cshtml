@@ -1,0 +1,64 @@
+﻿<link href="~/Areas/Admin/Models/animation.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Cấp quyền cho người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #hoverh2{
+        font-style:italic;
+        color:darkcyan;
+        transition:box-shadow 1.5s;
+    }
+    #hoverh2:hover{
+        color:#768b00;
+        box-shadow:0px 5px #513480;
+    }
+</style>
+<h2 style="padding-top:15px;text-align:center">    
+    <a href="@Url.Action("Index","KhachHangs")" style="text-decoration:none" id="hoverh2">Danh mục người dùng</a>
+    @*&gt;&gt;*@<i class="far fa-hand-point-right"  id="animation1"></i>Cấp quyền cho người dùng <i class="fas fa-coffee" data-fa-mask="fas fa-circle"></i><br />
+    <b style="color:orangered;text-align:center;font-size:30px"><i class="fas fa-cog fa-spin" style="color:dimgray"></i>@ViewBag.usergrant<i class="fas fa-cog fa-spin" style="color:dimgray"></i></b>
+</h2>
+<hr />
+<div id="msg"></div>
+<div class="row">
+    <div class="col-xs-6 col-md-6">
+        <h4>Danh sách nghiệp vụ</h4>
+        @Html.DropDownList("NghiepVusController", (IEnumerable<SelectListItem>)ViewBag.items, new { size = 9, onchange = "getPermissions('/CapPheps/getPermissions/'+this.value,'" + Session["usergrant"] + "');" })
+    </div>
+
+    <div class="col-xs-6 col-md-6">
+        <h4>Danh sách quyền hạn</h4>
+        <div id="listaction"></div>
+    </div>
+</div>
+<script>
+    function getPermissions(action, usergrant) 
+     {
+        $.ajax({
+            method: "GET",
+            url: action,
+            data: { usertemp: usergrant },
+            success: function (data) {
+                $('#listaction').html('');
+                $.each(data, function (index, value){
+                    if (value.IsGranted)
+                        $('#listaction').append("<input type='CheckBox' checked onchange='updatePermission(" + "\"/CapPheps/updatePermission/\"+this.value,\"@Session["usergrant"]\")'value='" + value.PermissionId + "'>" + value.Description + "<br/>");
+                    else
+                        $('#listaction').append("<input type='CheckBox' onchange='updatePermission(" + "\"/CapPheps/updatePermission/\"+this.value,\"@Session["usergrant"]\")' value='" + value.PermissionId + "'>" + value.Description + "<br/>");
+
+                });
+            }
+        })
+    }
+    function updatePermission(action, usergrant) {
+        $.ajax({
+            method: "GET",
+            url: action,
+            data: { usertemp: usergrant },
+            success: function (data) {
+                $("#msg").html(data);
+            }
+        })
+    }
+</script>

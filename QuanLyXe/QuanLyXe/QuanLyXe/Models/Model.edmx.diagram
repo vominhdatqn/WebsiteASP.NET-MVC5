@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ba0d10ec808a48e9b6982f1d2d5cc7c5" Name="Diagram1">
+        <EntityTypeShape EntityType="QLBanXeModel.AspNetRole" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.AspNetUserClaim" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.AspNetUserLogin" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.AspNetUserRole" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.AspNetUser" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.BlogPermission" Width="1.5" PointX="1.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.ChiTietSanPham" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.DonHang" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.KhachHang" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.LoaiSanPham" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.NghiepVu" Width="1.5" PointX="1.5" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.NhaCungCap" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.SanPham" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanXeModel.sysdiagram" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="QLBanXeModel.FK_BlogPermission_NghiepVu" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanXeModel.FK__ChiTietSa__MaDon__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanXeModel.FK__ChiTietSan__MaSP__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanXeModel.FK__DonHang__MaKH__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanXeModel.FK__SanPham__MaLoai__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanXeModel.FK__SanPham__MaNCC__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanXeModel.CapPhep" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<QuanLyXe.Models.DonHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center;color:#429841;">Quản Lý Đơn Hàng</h2>
+
+<p>
+    <a href="@Url.Action("Create","DonHangs")" class="btn btn-success btn-sm"><i class="fas fa-plus-square"></i>Thêm Mới</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayGiao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayDat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaThanhToan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TinhTrangGH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KhachHang.TenKH)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayGiao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayDat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DaThanhToan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TinhTrangGH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KhachHang.TenKH)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.MaDonHang }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaDonHang }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaDonHang })*@
+            <a href="@Url.Action("Edit","DonHangs", new {id=item.MaDonHang})" class="btn btn-warning btn-sm" style="width:93px"><i class="fas fa-edit"></i>Chỉnh Sửa</a>
+            <a href="@Url.Action("Details","DonHangs",new {id=item.MaDonHang})" class="btn btn-info btn-sm" style="width:93px;text-align:left"><i class="fas fa-info-circle"></i>Hiển Thị</a>
+            @*<a href="@Url.Action("Delete","DonHangs",new {id=item.MaDonHang})" class="btn btn-danger btn-sm" style="width:93px;text-align:left"><i class="fas fa-trash-alt"></i>Xóa</a>*@
+        </td>
+    </tr>
+}
+
+</table>

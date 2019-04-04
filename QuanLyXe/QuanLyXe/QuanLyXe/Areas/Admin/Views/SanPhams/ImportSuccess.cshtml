@@ -1,0 +1,92 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ImportSucsess</title>
+    <link href="~/Content/TrangChu.css" rel="stylesheet" />
+    <link href="~/Content/css/layout.css" rel="stylesheet" />
+</head>
+<body>
+
+    <table class="table">
+        <tr style="display:table-row;vertical-align: inherit;border-color: inherit;">
+            <th style="width:3%;text-align:center">
+                Mã SP
+            </th>
+            <th style="width:10%;text-align:center">
+                Tên SP
+            </th>
+            <th style="width:10%;text-align:center">
+                Ngày Cập Nhật
+            </th>
+            <th style="width:10%;text-align:center">
+                Hình Ảnh
+            </th>
+            <th style="width:37%;text-align:center">
+                Mô Tả
+            </th>
+            <th style="width:10%;text-align:center">
+                Giá Bán
+            </th>
+            <th style="width:3%;text-align:center">
+                Số Lượng Tồn
+            </th>
+            <th style="width:3%;text-align:center">
+                Sản Phẩm Mới
+            </th>
+            <th style="width:3%;text-align:center">
+                Mã Loại
+            </th>
+            <th style="width:4%">
+                MaNCC
+            </th>
+        </tr>
+
+        @foreach (var p in ViewBag.ListProducts)
+            {
+            <tr style="display:table-row;vertical-align: inherit;border-color: inherit;">
+                <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.MaSP
+                </td>
+                <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.TenSP
+                </td>
+                <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.NgayCapNhat
+                </td>
+                <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.HinhAnh
+                </td>
+                <td style="width:37%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.MoTa
+                </td>
+                <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.GiaBan
+                </td>
+                <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.SoLuongTon
+                </td>
+                <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.SanPhamMoi
+                </td>
+                <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.MaLoai
+                </td>
+                <td style="width:4%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @p.MaNCC
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+
+
+</body>
+</html>

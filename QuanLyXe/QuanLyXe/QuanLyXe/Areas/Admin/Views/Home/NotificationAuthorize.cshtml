@@ -1,0 +1,28 @@
+﻿<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<!--Date Picker Material Icon Css-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- iconfont -->
+<link href="~/Areas/Admin/cssadmin/icofont.css" rel="stylesheet" />
+<link href="~/Areas/Admin/cssadmin/inverse.css" rel="stylesheet" />
+<link href="~/Areas/Admin/cssadmin/main.css" rel="stylesheet" />
+<link href="~/Areas/Admin/cssadmin/responsive.css" rel="stylesheet" />
+<link href="~/Areas/Admin/cssadmin/simple-line-icons.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "NotificationAuthorize";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header"><h5 class="card-header-text">Thông báo từ quản trị website</h5></div>
+        <div class="card-block button-list notifications">
+            <H6>Bạn không có quyền truy cập vào chức năng này ! Hãy liên lạc với quản trị để được cấp quyền <i class="fas fa-exclamation-triangle"></i></H6>
+        </div>
+    </div>
+</div>
+                </div>
+@*<h2 style="padding-top:15px;">Thông báo từ quản trị website</h2>
+<div class="alert alert-danger"><p style="margin-bottom: 2px">Bạn không có quyền truy cập vào chức năng này ! Hãy liên lạc với quản trị để được cấp quyền <i class="fas fa-exclamation-triangle"></i></p></div>*@
+<div class="col-md-offset-5 col-md-2"><a  class="btn btn-info waves-effect"  onclick="javascript:history.back()">Quay Lại</a></div>
+

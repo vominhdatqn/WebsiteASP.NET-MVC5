@@ -1,0 +1,50 @@
+﻿@model IEnumerable<QuanLyXe.Models.NghiepVu>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Danh Sách Các Nghiệp Vụ</h2>
+
+<p>
+    @*@Html.ActionLink("Cập Nhật", "UpdateNghiepVu")*@
+    <a href="@Url.Action("UpdateNghiepVu","NghiepVus")" class="btn btn-primary btn-sm"><i class="fas fa-plus-square"></i>Cập Nhật</a>
+</p>
+<div>
+    @Html.Raw(TempData["err"])
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaNghiepVu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenNghiepVu)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaNghiepVu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNghiepVu)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.MaNghiepVu }) |
+            @Html.ActionLink("Danh sách quyển hạn", "Index","BlogPermissions", new { id=item.MaNghiepVu },null) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaNghiepVu })*@
+            <a href="@Url.Action("Edit","NghiepVus", new {id=item.MaNghiepVu})" class="btn btn-warning btn-sm" style="width:93px"><i class="fas fa-edit"></i>Chỉnh Sửa</a>
+            <a href="@Url.Action("Details","NghiepVus",new {id=item.MaNghiepVu})" class="btn btn-info btn-sm" style="width:93px;text-align:left"><i class="fas fa-info-circle"></i>Hiển Thị</a>
+            <a href="@Url.Action("Delete","NghiepVus",new {id=item.MaNghiepVu})" class="btn btn-danger btn-sm" style="width:93px;text-align:left"><i class="fas fa-trash-alt"></i>Xóa</a>
+            <a href="@Url.Action("Index","BlogPermissions",new {id=item.MaNghiepVu},null)" class="btn btn-secondary btn-sm" style="width:93px;text-align:left"><i class="fas fa-universal-access"></i>Danh Sách Quyền Hạn</a>
+            
+           
+        </td>
+    </tr>
+}
+
+</table>

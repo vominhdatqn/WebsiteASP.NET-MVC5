@@ -1,0 +1,29 @@
+﻿@model QuanLyXe.Models.NghiepVu
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Hiển Thị Nghiệp Vụ</h2>
+
+<div>
+    <h4>Nghiệp Vụ</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenNghiepVu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNghiepVu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.MaNghiepVu }) |
+    @Html.ActionLink("Back to List", "Index")*@
+    <a href="@Url.Action("Edit","NghiepVus", new {id = Model.MaNghiepVu})" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i>Chỉnh Sửa</a> |
+    <a href="@Url.Action("Index","NghiepVus")" class="btn btn-info btn-sm"><i class="fa fa-angle-left"></i>Trở Về Quản Lý</a>
+</p>

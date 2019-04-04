@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "PieChart";
+    Layout = "~/Views/Layout/LayoutAdmin.cshtml";
+}
+<script src="~/Scripts/exporting.js"></script>
+<script src="~/Scripts/highcharts.js"></script>
+<script src="~/Areas/Admin/Models/TemplateAdmin/vendor/jquery/jquery.min.js"></script>
+<div class="jumbotron">
+    <div id="container" style="min-width: 600px; height: 400px; max-width: 700px; margin: 0 auto"></div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON("/QuanLySanPham/GetData", function (data) {
+
+
+
+            Highcharts.chart('container', {
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie'
+                },
+                title: {
+                    text: 'Số Lượng Xe Bán Trong Quý 2'
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Brands',
+                    colorByPoint: true,
+                    data: [{
+                        name: 'Khách Hàng 1',
+                        y: data.xe1
+                    },{
+                        name: 'Khách Hàng 2',
+                        y: data.xe5
+                    } ,{
+                        name: 'Khách Hàng 3',
+                        y: data.xe4
+                    }, {
+                        name: 'Khách Hàng 4',
+                        y: data.xe6
+                    }, {
+                        name: 'Khách Hàng 5',
+                        y: data.xe16
+                    }]
+                }]
+            });
+        });
+    });
+
+</script>
+
+

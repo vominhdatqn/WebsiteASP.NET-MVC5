@@ -1,0 +1,408 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Able Pro Responsive Bootstrap 4 Admin Template by Phoenixcoded</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Phoenixcoded">
+    <meta name="keywords" content=", Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="Phoenixcoded">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!--Date Picker Material Icon Css-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- iconfont -->
+    <link href="~/Areas/Admin/cssadmin/icofont.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/inverse.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/main.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/responsive.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/simple-line-icons.css" rel="stylesheet" />
+</head>
+<body class="horizontal-fixed fixed">
+   
+
+        <!-- Sidebar chat end-->
+        <div class="content-wrapper">
+            <!-- Container-fluid starts -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="main-header">
+                        <h2 style="text-align:center">THÔNG TIN KHÁCH HÀNG</h2>
+                    </div>
+                </div>
+                <!-- Header end -->
+                <div class="row">
+                    
+                    <!-- end of col-lg-3 -->
+                    <!-- start col-lg-9 -->
+                    <div class="col-xl-12 col-lg-12">
+                       @RenderBody()
+                        <!-- end of tab-header -->
+
+                        @*<div class="tab-content">
+                            <div class="tab-pane active" id="personal" role="tabpanel">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button id="edit-btn" type="button" class="btn btn-primary waves-effect waves-light f-right">
+                                            <i class="icofont icofont-edit"></i>Chỉnh Sửa
+                                        </button>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="view-info">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="general-info">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-xl-6">
+                                                                <table class="table m-0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th scope="row">Full Name</th>
+                                                                            <td>@Model.TenKH </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">Gender</th>
+                                                                            <td>@Model.GioiTinh</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">Birth Date</th>
+                                                                            <td>@Model.NgaySinh</td>
+                                                                        </tr>
+                                                                       
+                                                                        <tr>
+                                                                            <th scope="row">Location</th>
+                                                                            <td>@Model.DiaChi  -  VietNamese</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <!-- end of table col-lg-6 -->
+
+                                                            <div class="col-lg-12 col-xl-6">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th scope="row">Email</th>
+                                                                            <td><a href="#!">@Model.Email</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">Mobile Number</th>
+                                                                            <td>@Model.DienThoai</td>
+                                                                        </tr>
+                                                                       
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <!-- end of table col-lg-6 -->
+                                                        </div>
+                                                        <!-- end of row -->
+                                                    </div>
+                                                    <!-- end of general info -->
+                                                </div>
+                                                <!-- end of col-lg-12 -->
+                                            </div>
+                                            <!-- end of row -->
+                                        </div>*@
+                                        <!-- end of view-info -->
+
+                                       @* <div class="edit-info">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="general-info">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-ui-user"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <input type="text" class="md-form-control">
+                                                    <label>Full Name</label>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <div class="form-radio">
+                                                <form>
+                                                    <div class="md-group-add-on">
+                                                        <span class="md-add-on">
+                                                            <i class="icofont icofont-group-students"></i>
+                                                        </span>
+                                                        <div class="radio radiofill radio-inline">
+                                                            <label>
+                                                                <input type="radio" name="radio"><i class="helper"></i> Male
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio radiofill radio-inline">
+                                                            <label>
+                                                                <input type="radio" name="radio"><i class="helper"></i> Female
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-ui-calendar"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <input type="text" id="date" class="md-form-control form-control floating-label">
+                                                    <label>Birthday Date</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-users-alt-4"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <select class="md-form-control">
+                                                        <option>Select Marital Status</option>
+                                                        <option>Married</option>
+                                                        <option>Unmarried</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-location-pin"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <textarea class="md-form-control" cols="2" rows="4"></textarea>
+                                                    <label>Address</label>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- end of table col-lg-6 -->
+
+                        <div class="col-lg-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-email"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <input type="email" class="md-form-control">
+                                                    <label>Email</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-mobile-phone"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <input type="number" class="md-form-control">
+                                                    <label>Mobile Number</label>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-social-twitter"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <input type="email" class="md-form-control">
+                                                    <label>Twitter Id</label>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-social-skype"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <input type="email" class="md-form-control">
+                                                    <label>Skype Id</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="md-group-add-on">
+                                                <span class="md-add-on">
+                                                    <i class="icofont icofont-web"></i>
+                                                </span>
+                                                <div class="md-input-wrapper">
+                                                    <input type="text" class="md-form-control">
+                                                    <label>Website</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <!-- end of table col-lg-6 -->
+                    </div>
+                    <!-- end of row -->
+                    <div class="text-center">
+                        <a href="#!" class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                        <a href="#!" id="edit-cancel" class="btn btn-default waves-effect">Cancel</a>
+                    </div>
+                </div>
+                <!-- end of edit info -->
+            </div>
+            <!-- end of col-lg-12 -->
+        </div>
+        <!-- end of row -->
+
+    </div>*@
+                                        <!-- end of view-info -->
+                                    @*</div>
+                                    <!-- end of card-block -->
+                                </div>
+                                <!-- end of card-->*@
+
+                                
+                                <!-- end of row of education and experience  -->
+
+                                
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="Chrome">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="Firefox">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="Opera">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="Safari">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Jqurey -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script type="text/javascript" src="../bower_components/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../bower_components/popper.js/js/popper.min.js"></script>
+
+    <!-- Required Fremwork -->
+    <script type="text/javascript" src="../bower_components/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- waves effects.js -->
+    <script src="~/Content/hienthilayout/waves.min.js"></script>
+    <!-- Scrollbar JS-->
+    <script type="text/javascript" src="../bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    
+    <script src="~/Content/hienthilayout/jquery.nicescroll.min.js"></script>
+
+    <!--classic JS-->
+    <script type="text/javascript" src="../bower_components/classie/js/classie.js"></script>
+
+    <!-- notification -->
+    <script src="~/Content/hienthilayout/bootstrap-growl.min.js"></script>
+
+    <!-- pie chart.js -->
+    <script type="text/javascript" src="../bower_components/bower-jquery-easyPieChart/js/jquery.easypiechart.min.js"></script>
+    <script src="~/Content/hienthilayout/counter.js"></script>
+    <!-- Date picker.js -->
+    <script type="text/javascript" src="../bower_components/moment/js/moment.js"></script>
+    
+    <script src="~/Content/hienthilayout/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- custom js -->
+
+    <script src="~/Content/hienthilayout/main.min.js"></script>
+    <script src="~/Content/hienthilayout/profile.js"></script>
+
+    <script src="~/Content/hienthilayout/elements.js"></script>
+
+    <script src="~/Content/hienthilayout/menu-horizontal.min.js"></script>
+  
+
+</body>
+</html>
+

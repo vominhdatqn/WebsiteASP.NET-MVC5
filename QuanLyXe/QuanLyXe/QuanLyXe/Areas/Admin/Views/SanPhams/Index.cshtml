@@ -1,0 +1,345 @@
+﻿
+@*@using PagedList.Mvc;
+@model PagedList.IPagedList<QuanLyXe.Models.SanPham>*@
+@model IEnumerable<QuanLyXe.Models.SanPham>
+@helper Truncate(string input, int length)
+{
+if (input.Length < length)
+{
+        @input
+}
+else
+{
+        @input.Substring(0, length)<text>...</text>
+}
+}
+
+<link href="~/Content/TrangChu.css" rel="stylesheet" />
+<link href="~/Content/css/layout.css" rel="stylesheet" />
+<link href="~/Content/css/option.css" rel="stylesheet" />
+@*<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!--Date Picker Material Icon Css-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- iconfont -->
+    <link href="~/Areas/Admin/cssadmin/icofont.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/inverse.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/main.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/responsive.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/cssadmin/simple-line-icons.css" rel="stylesheet" />*@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #menu ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #menu li {
+        color: #f1f1f1;
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: -5px;
+        float: left;
+    }
+</style>
+<h2 style="text-align:center;color:#429841;">Quản Lý Sản Phẩm</h2>
+<div id="menu">
+    <ul>
+        <li>
+            <div>
+              
+               <input type="text" id="Search" name="Search" style="height: 34px;width: 200px;margin-left: -34px;" placeholder="Search for...">
+                    <span class="input-group-append" style="float: right;margin-top: -39px;margin-right: -88px;">
+                        <button class="btn btn-primary" type="submit" id="SearchBtn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+
+          
+            </div>
+
+            @*<form class="form-inline my-2 my-lg-0 mr-lg-2" method="post">
+
+                </form>*@
+        </li>
+        <li>
+            @*<div class="custom-select" style="width:200px;margin-left: 168px;">
+                <select id="SearchBy">
+                    <option value="MaSP">Mã Sản Phẩm</option>
+                    <option value="TenSP">Tên Sản Phẩm</option>            
+                </select>
+            </div>*@
+        </li>
+
+        <li><a href="@Url.Action("Create","SanPhams")" class="btn btn-success btn-sm" style="margin-left:621px;cursor:pointer" title="Create"><i class="fas fa-plus-square"></i>Thêm Mới</a></li>
+        @*<li><a href="@Url.Action("Export","SanPhams")" class="btn btn-danger btn-sm" style="margin-left: 293px;padding-right: 33px;" title="Create"><i class="fas fa-plus-square"></i>Export</a></li>*@
+        <li>
+            @using (Html.BeginForm("Export", "SanPhams", FormMethod.Post))
+            {
+                <input type="submit" value="Export" class="btn btn-danger btn-sm" style="margin-left: 603px;padding-right: 33px;" />
+            }
+        </li>
+        <li>
+            @using (Html.BeginForm("Import", "SanPhams", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+                @*<input type="submit" value="Import" class="btn btn-info btn-sm" style="margin-left: 276px;padding-right: 33px;" />
+                <input type="file" name="excelfile" @*class="btn btn-danger btn-sm" style="margin-left: 385px;padding-right: 33px;float: left; margin-top: -50px;" />*@
+            }
+        </li>
+        @*<li><a href="@Url.Action("Create","SanPhams")" class="btn btn-info btn-sm" style="margin-left: 287px;padding-right: 33px;" title="Create"><i class="fas fa-plus-square"></i>Import</a></li>*@
+    </ul>
+
+</div>
+<table class="table">
+    <tr style="display:table-row;vertical-align: inherit;border-color: inherit;">
+        <th style="width:3%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().MaSP)
+        </th>
+        <th style="width:10%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().TenSP)
+        </th>
+        <th style="width:10%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().NgayCapNhat)
+        </th>
+        <th style="width:10%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().HinhAnh)
+        </th>
+        <th style="width:37%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().MoTa)
+        </th>
+        <th style="width:10%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().GiaBan)
+        </th>
+        <th style="width:3%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().SoLuongTon)
+        </th>
+        <th style="width:3%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().SanPhamMoi)
+        </th>
+        <th style="width:3%;text-align:center">
+            @Html.DisplayNameFor(model => model.First().MaLoai)
+        </th>
+        <th style="width:4%">
+            @Html.DisplayNameFor(model => model.First().MaNCC)
+        </th>
+        <th style="width:7%"></th>
+    </tr>
+    <tbody id="DataSearching">
+        @foreach (var item in Model)
+        {
+            <tr style="display:table-row;vertical-align: inherit;border-color: inherit;" class="Search">
+                <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @Html.DisplayFor(modelItem => item.MaSP)
+                </td>
+                <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @Html.DisplayFor(modelItem => item.TenSP)
+                </td>
+                <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @Html.DisplayFor(modelItem => item.NgayCapNhat)
+                </td>
+                <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    <img class="full-width img-responsive" src="@Url.Content("~/HinhAnhSanPham/"+item.HinhAnh)" alt="Portfolio Image" width='150' height='100' />
+                </td>
+                <td style="width:37%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @*@Html.DisplayFor(modelItem => item.MoTa)*@
+                    @Html.Raw(item.MoTa)
+                    @*@Truncate(item.MoTa, 50)*@
+                </td> 
+                <td style="width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @Html.DisplayFor(modelItem => item.GiaBan)
+                </td>
+                <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @Html.DisplayFor(modelItem => item.SoLuongTon)
+                </td>
+                <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @Html.DisplayFor(modelItem => item.SanPhamMoi)
+                </td>
+                <td style="width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @Html.DisplayFor(modelItem => item.MaLoai)
+                </td>
+                <td style="width:4%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    @Html.DisplayFor(modelItem => item.NhaCungCap.TenNCC)
+                </td>
+                <td style="width:7%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;">
+                    <a href="@Url.Action("Edit","SanPhams", new {MaSP=item.MaSP})" title="Edit" class="btn btn-warning btn-sm" style="width:93px"><i class="fas fa-edit"></i>Chỉnh Sửa</a>
+                    <a href="@Url.Action("Details","SanPhams",new {MaSP=item.MaSP})" title="Detail" class="btn btn-info btn-sm" style="width:93px;text-align:left"><i class="fas fa-info-circle"></i>Hiển Thị</a>
+                    <a href="@Url.Action("Delete","SanPhams",new {MaSP=item.MaSP})" title="Delete" class="btn btn-danger btn-sm" style="width:93px;text-align:left"><i class="fas fa-trash-alt"></i>Xóa</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@*Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+
+    #product {
+        background: #fff;
+        padding: 50px;
+        border: 1px solid #c2c5ce;
+        border-radius: 0 !important;
+        transition: box-shadow 0.5s;
+    }
+
+        #product:hover {
+            background-color: white;
+            box-shadow: 10px 0px 10px #17bed2 !important;
+        }
+
+    .table th {
+        padding: .75rem;
+        vertical-align: middle;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .table td {
+        padding: .75rem;
+        vertical-align: middle;
+        border-top: 1px solid #dee2e6;
+    }
+</style>*@
+<script>
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 0; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);</script>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        function Contains(text_one, text_two) {
+            if (text_one.indexOf(text_two) != -1)
+                return true;
+
+        }
+        $("#Search").keyup(function () {
+            var searchText = $("#Search").val().toLowerCase();
+            $(".Search").each(function () {
+                if (!Contains($(this).text().toLowerCase(), searchText)) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            });
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#SearchBtn").click(function () {
+            var SearchBy = $("#SearchBy").val();
+            var SearchValue = $("#Search").val();
+            var SetData = $("#DataSearching");
+            SetData.html("");
+            $.ajax({
+                type: "post",
+                url: "/Areas/Admin/Home/GetSearchingData?SearchBy=" + SearchBy + "&SearchValue=" + SearchValue,
+                contentType: "html",
+                success: function (result) {
+                    if (result.length == 0) {
+                        SetData.append('<tr style="color:red"><td colspan="10">No Match Data</td></tr>')
+                    }
+                    else {
+                        $.each(result, function (index, value) {
+                            var Data = "<tr style='display:table-row;vertical-align: inherit;border-color: inherit;' class='Search'>" +
+                                "<td style='width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.MaSP + "</td>" +
+                                "<td style='width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.TenSP + "</td>" +
+                                "<td style='width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.NgayCapNhat + "</td>" +
+                                  "<td style='width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.HinhAnh + "</td>" +
+                                    "<td style='width:37%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.MoTa + "</td>" +
+                                      "<td style='width:10%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.GiaBan + "</td>" +
+                                        "<td style='width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.SoLuongTon + "</td>" +
+                                          "<td style='width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.SanPhamMoi + "</td>" +
+                                            "<td style='width:3%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.MaLoai + "</td>" +
+                                            "<td style='width:4%;text-align:center;padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;'>" + value.MaNCC + "</td>" +
+                                "</tr>";
+                            SetData.append(Data);
+                         
+                        });
+                    }
+                }
+            });
+        });
+    });
+</script>
